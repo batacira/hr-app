@@ -1,0 +1,26 @@
+:root {
+    --chakra-shadows-outline: rgb(92, 153, 62) !important;
+}
+input:focus,
+select:focus {
+    z-index: 1;
+    border-color: rgb(92, 153, 62) !important;
+    box-shadow: 0 0 0 1px rgb(92, 153, 62) !important;
+}
+.bgBlack {
+    background-image: url('./assets/dark-quantox-logo.png'),
+        url('./assets/dark-quantox-logo.png'),
+        url('./assets/dark-quantox-logo.png'),
+        url('./assets/dark-quantox-logo.png'),
+        url('./assets/dark-quantox-logo.png'),
+        url('./assets/dark-quantox-logo.png');
+    background-color: black;
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    background-position: 10px, 60px, 110px, calc(100vw - 50px),
+        calc(100vw - 100px), calc(100vw - 150px);
+}
+@media (max-width: 767px) {
+    .bgBlack {
+        background-position: 10px, calc(100vw - 50px);
+    }
+}
